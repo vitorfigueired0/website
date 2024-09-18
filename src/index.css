@@ -55,5 +55,5 @@ code {
 }
 
 .nav-item {
-  @apply cursor-pointer hover:text-gray-300
+  @apply cursor-pointer hover:text-gray-300;
 }

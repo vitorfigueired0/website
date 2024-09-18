@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         paysage: ['Paysage', 'sans-serif']
+      },
+      fontStretch: {
+        expanded: 'expanded'
       }
     },
   },

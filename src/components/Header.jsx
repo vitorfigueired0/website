@@ -3,7 +3,7 @@ export const Header = () => {
   return(
     <header className='h-24 bg-transparent'>
       
-      <nav className='flex flex-row items-center text-xl text-white font-bold font-paysage h-full gap-10 text-nowrap'>
+      <nav className='flex flex-row items-center text-2xl text-white font-bold font-paysage h-full gap-10 text-nowrap'>
         <span className='nav-item'>home</span>
         <span className='nav-item'>about me</span>
         <span className='nav-item'>services</span>
