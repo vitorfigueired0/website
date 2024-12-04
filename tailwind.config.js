@@ -17,6 +17,9 @@ export default {
         'pallete-2' : '#002744',
         'pallete-3' : '#879daa',
         'pallete-4' : '#daf0fe'
+      },
+      height: {
+        '90/100' : '90%'
       }
     },
   },

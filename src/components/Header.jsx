@@ -20,7 +20,7 @@ const Navbar = ({ isSideOpen }) => {
 
 export const Header = () => {
   const [isSideOpen, setIsSideOpen] = useState(false)
-  const headerStyle = `fixed md:static bg-black flex gap-5 md:h-40 ${isSideOpen ? 'w-36 h-full flex-col border-r border-white' : 'h-18 w-full items-center'}`
+  const headerStyle = `m-[-20px] bg-black p-5 fixed md:static flex gap-5 md:h-40 ${isSideOpen ? 'w-36 h-full flex-col border-r border-white' : 'h-18 w-full items-center'}`
 
   const openSideBar = () => {
     setIsSideOpen(!isSideOpen)
