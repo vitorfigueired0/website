@@ -12,6 +12,12 @@ export default {
         'payasage-bold': ['src/assets/fonts/Paysage-Bold.woff', 'bold'],
         'payasage-black': ['src/assets/fonts/Paysage-Black.woff', 'black'],
       },
+      colors: {
+        'pallete-1' : '#090806',
+        'pallete-2' : '#002744',
+        'pallete-3' : '#879daa',
+        'pallete-4' : '#daf0fe'
+      }
     },
   },
   plugins: [],

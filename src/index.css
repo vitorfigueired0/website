@@ -15,5 +15,5 @@ html, body {
 }
 
 .header-nav-item {
-  @apply px-3 py-2 rounded-xl hover:text-[#daf0fe] hover:bg-[#002746] cursor-pointer font-payasage
+  @apply ml-[-8px] md:ml-[-16px] px-3 md:px-5 py-2 rounded-xl hover:text-pallete-4 hover:bg-pallete-2 cursor-pointer font-payasage
 }
