@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = ({ isSideOpen }) => {
-  const sectionsStyle = `flex gap-6 text-lg font-black ${isSideOpen ? 'flex-col' : ''}`
+  const sectionsStyle = `flex gap-6 text-lg md:text-xl md:gap-20 font-black ${isSideOpen ? 'flex-col' : ''}`
   const navStyle = `${isSideOpen ? '' : 'hidden md:block'}`
   
   return (
@@ -19,7 +19,10 @@ const Navbar = ({ isSideOpen }) => {
 
 export const Header = () => {
   const [isSideOpen, setIsSideOpen] = useState(false)
-  const headerStyle = `flex gap-5 p-4 fixed md:static border-white ${isSideOpen ? 'w-36 h-full flex-col border-r' : 'h-20 w-full items-center border-b'}`
+  const headerStyle = `
+    flex gap-5 p-4 fixed md:static border-white md:border-none md:h-40 md:px-20
+    ${isSideOpen ? 'w-36 h-full flex-col border-r' : 'h-20 w-full items-center border-b'}
+  `
 
   const openSideBar = () => {
     setIsSideOpen(!isSideOpen)
