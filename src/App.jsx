@@ -1,14 +1,18 @@
 import { Header } from './components/Header'
 import { MainText } from './components/MainText'
 import { Skills } from './components/Skills'
+import { Footer } from './components/Footer'
 
 function App() {
 
   return (
-    <div className='p-5 md:px-20 h-screen'>
+    <div className='p-5 pb-1 md:px-20 h-screen'>
       <Header />
       <MainText />
+      <div className='h-80'></div>
       <Skills />
+      <div className='h-24'></div>
+      <Footer />
     </div>
   )
 }

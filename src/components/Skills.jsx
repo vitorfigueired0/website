@@ -3,7 +3,7 @@ import { FaGithub, FaLinux, FaDatabase, FaCogs, FaReact, FaCode } from "react-ic
 
 const SkillBlock = ({ Icon, title, description }) => {
   return (
-    <div className='bg-pallete-4 bg-opacity-15 hover:bg-opacity-100 hover:text-black rounded-2xl h-60 md:h-72 px-8 py-5 flex flex-col border-b-4 border-pallete-4'>
+    <div className='bg-pallete-4 bg-opacity-15 hover:bg-opacity-100 hover:text-black rounded-2xl h-62 md:h-72 px-8 py-5 flex flex-col border-b-4 border-pallete-4'>
       <h1 className='flex items-center gap-3 text-2xl font-black mb-4'> 
         <Icon size={30}/>
         {title}
@@ -49,8 +49,8 @@ export const Skills = () => {
   ]
 
   return (
-    <section className='h-90/100 mb-1'>
-      <header className='text-3xl font-black '>
+    <section className='mb-1'>
+      <header className='text-3xl font-black mt-24 '>
         <h1>Skill Set</h1>
       </header>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 lg:mt-16 gap-3 lg:px-28 '>
