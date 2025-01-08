@@ -12,7 +12,7 @@ export const Footer = () => {
     },
     {
       name: 'Linkedin',
-      link: 'https://likedin.com/in/vitorfig',
+      link: 'https://linkedin.com/in/vitorfig',
       Icon: FaLinkedin
     },
     {
@@ -34,7 +34,7 @@ export const Footer = () => {
   return(
     <footer className='h-48 lg:h-24'>
       <h1 className='text-2xl font-black'>Contact me</h1>
-      <div className='mt-2 gap-5  '>
+      <div className='mt-2 gap-5'>
        {contacts.map((badge) => (
         <ContactBadge 
           name={badge.name}
