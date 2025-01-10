@@ -1,9 +1,11 @@
 import { FaArrowRightLong } from "react-icons/fa6";
+import React, { forwardRef } from 'react';
 
-export const MainText = () => { 
+
+export const MainText = forwardRef(( props, ref ) => { 
 
   return(
-    <section className='mt-56 md:mt-44 lg:mt-52'>
+    <section className='mt-56 md:mt-44 lg:mt-52' ref={ref}>
       <p className='text-5xl md:text-6xl lg:text-7xl lg:w-1/2 font-black mb-16 md:mb-24'>
         Hi, I am Vitor Figueiredo, a web developer 
       </p>
@@ -14,4 +16,4 @@ export const MainText = () => {
     </section>
   )
 
-}
+})

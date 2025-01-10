@@ -1,9 +1,12 @@
 import { FaGithub, FaLinux, FaDatabase, FaCogs, FaReact, FaCode } from "react-icons/fa";
+import React, { forwardRef } from 'react';
 
-
-const SkillBlock = ({ Icon, title, description }) => {
+const SkillBlock = ({ Icon, title, description, key }) => {
   return (
-    <div className='bg-pallete-4 bg-opacity-15 hover:bg-opacity-100 hover:text-black rounded-2xl h-62 md:h-72 px-8 py-5 flex flex-col border-b-4 border-pallete-4 min-w-72'>
+    <div 
+      className='bg-pallete-4 bg-opacity-15 hover:bg-opacity-100 hover:text-black rounded-2xl h-62 md:h-72 px-8 py-5 flex flex-col border-b-4 border-pallete-4 min-w-72'
+      key={key}
+    >
       <h1 className='flex items-center gap-3 text-2xl font-black mb-4'> 
         <Icon size={30}/>
         {title}
@@ -13,7 +16,7 @@ const SkillBlock = ({ Icon, title, description }) => {
   )
 }
 
-export const Skills = () => {
+export const Skills = forwardRef((props, ref) => {
 
   const blocks = [
     {
@@ -49,19 +52,20 @@ export const Skills = () => {
   ]
 
   return (
-    <section className='mb-1'>
+    <section className='mb-1' ref={ref}>
       <header className='text-3xl font-black mt-24 '>
         <h1>Skill Set</h1>
       </header>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 lg:mt-16 gap-3 lg:px-28'>
-        {blocks.map((block) => (
+        {blocks.map((block, index) => (
           <SkillBlock
             Icon={block.Icon}
             title={block.title}
             description={block.description}
+            key={index}
           />
         ))}
       </div>
     </section>
   )
-}
+})
