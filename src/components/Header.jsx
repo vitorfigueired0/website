@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 
-const Navbar = ({ isSideOpen, refs }) => {
+const Navbar = ({ isSideOpen, refs, setIsSideOpen }) => {
   const sectionsStyle = `flex gap-6 text-lg md:text-xl md:gap-20 font-black ${isSideOpen ? 'flex-col' : ''}`
   const navStyle = `${isSideOpen ? '' : 'hidden md:block'}`
 
@@ -17,6 +17,8 @@ const Navbar = ({ isSideOpen, refs }) => {
       top: offsetPosition,
       behavior: 'smooth',
     });
+
+    setIsSideOpen(false)
   };
 
 
@@ -45,7 +47,7 @@ export const Header = ({ refs }) => {
       <button className='h-12 w-9 flex items-center md:hidden' onClick={openSideBar}>
         <GiHamburgerMenu size={30} className='hover:text-pallete-4' />
       </button>
-      <Navbar isSideOpen={isSideOpen} refs={refs} />
+      <Navbar isSideOpen={isSideOpen} refs={refs} setIsSideOpen={setIsSideOpen} />
     </header>
   )
 } 
