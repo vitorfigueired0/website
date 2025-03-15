@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --pallete-1: #0F172A;
+  --pallete-2: #3B82F6;
+  --pallete-3: #94A3B8;
+  --pallete-4: #F8FAFC;
+}
+
 html, body {
   padding: 0;
   margin: 0;
