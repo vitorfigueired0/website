@@ -111,7 +111,7 @@ export const Header = ({ refs }) => {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-30 bg-pallete-1/80 backdrop-blur-md border-b border-pallete-2/10">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="p-5 pb-1 md:px-20">
           <div className="flex justify-start h-16">
             {/* Mobile Menu Button */}
             <button
